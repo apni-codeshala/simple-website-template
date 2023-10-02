@@ -39,8 +39,9 @@
 
 .navbar-item {
     padding: 20px 50px;
-    list-style: none;
     border-radius: 30px;
+    color: white;
+    text-decoration: none;
 }
 
 .navbar-item:hover {
@@ -235,19 +236,19 @@
     text-align: center;
     height: 80vh;
 }
- 
+
 .about h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
- 
+
 .about p {
     font-size: 1rem;
     color: #323030;
     max-width: 800px;
     margin: 0 auto;
 }
- 
+
 .about-info {
     margin: 2rem 2rem;
     display: flex;
@@ -255,26 +256,26 @@
     justify-content: center;
     text-align: left;
 }
- 
+
 .about-img {
     width: 20rem;
     height: 20rem;
- 
+
 }
- 
+
 .about-img img {
     width: 100%;
     height: 100%;
     border-radius: 5px;
     object-fit: contain;
 }
- 
+
 .about-info p {
     font-size: 1.3rem;
     margin: 0 2rem;
     text-align: justify;
 }
- 
+
 button {
     border: none;
     outline: 0;
@@ -288,7 +289,7 @@ button {
     width: 15rem;
     border-radius: 30px;
 }
- 
+
 button:hover {
     background-color: #1f9405;
 }
@@ -314,4 +315,130 @@ button:hover {
 
 .copyright {
     padding: 40px;
+}
+
+/* Registration form */
+
+.register-section {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(360deg, rgb(245, 255, 245) 0%, rgb(173, 252, 163) 100%);
+}
+
+.container {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.container header {
+    font-size: 40px;
+    color: #333;
+    font-weight: 500;
+    text-align: center;
+}
+
+.container .form {
+    margin-top: 30px;
+}
+
+.form .input-box {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-box label {
+    color: #333;
+}
+
+.form :where(.input-box input, .select-box) {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.input-box input:focus {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.form .column {
+    display: flex;
+    column-gap: 15px;
+}
+
+.form .gender-box {
+    margin-top: 20px;
+}
+
+.gender-box h3 {
+    color: #333;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.form :where(.gender-option, .gender) {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+
+.form .gender {
+    column-gap: 5px;
+}
+
+.gender input {
+    accent-color: rgb(130, 106, 251);
+}
+
+.form :where(.gender input, .gender label) {
+    cursor: pointer;
+}
+
+.gender label {
+    color: #707070;
+}
+
+.address :where(input, .select-box) {
+    margin-top: 15px;
+}
+
+.select-box select {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #707070;
+    font-size: 1rem;
+}
+
+.form button {
+    height: 55px;
+    width: 90%;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: rgb(130, 106, 251);
+}
+
+.form button:hover {
+    background: rgb(88, 56, 250);
 }
